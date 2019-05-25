@@ -1,0 +1,27 @@
+#center{
+    position: absolute;
+    left: 50%;
+    top: 20%;
+    transform: translate(-50%,-50%);
+}
+
+body{
+    background: whitesmoke;
+}
+
+span#error{
+    text-decoration-color: crimson;
+    text-align: center;
+    font-style: oblique;
+}
+
+.box{
+    display: none;
+    width: 100%;
+}
+
+a:hover + .box,.box:hover{
+    display: block;
+    position: relative;
+    z-index: 100;
+}

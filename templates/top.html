@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='style.css') }}">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Top short urls</title>
+</head>
+<body>
+    <div id="center">
+        <h1>Top Short URls</h1>
+        {%for i in a%}
+        <b>{{i[0]}} -- <a href="http://localhost:5000/{{i[1]}}"> http://localhost:5000/{{i[1]}}</a></b> <br>
+        {%endfor%}
+    <br>
+    <br>
+    <b><a href="/">Home page</a></b>
+    </div>
+</body>
+</html>

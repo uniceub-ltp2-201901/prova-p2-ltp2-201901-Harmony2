@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='style.css') }}">
+    <title>Url Shortner</title>
+    
+</head>
+<body>
+<div id="center">
+    <h1>Shorten your urls for free!</h1> <br><br>
+    <b>Test this one, for example: <a href="/test">http://localhost:5000/test</a></b>
+    <br><br><br><br>
+    <form action="/shorten" method="POST">
+        <b>Simply insert an url you would like to shorten and press the button!</b>
+        <input type="text" name="full_url"><br>
+        <input type="submit" value="Shorten!">
+    </form>
+    <br>
+    <br>
+    <b>Check out our<a href="/top"> Top short urls</a></b>
+
+</div>
+</body>
+</html>

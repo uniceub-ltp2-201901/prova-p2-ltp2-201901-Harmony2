@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='style.css') }}">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Your Short Url</title>
+</head>
+<body>
+    <div id="center">
+        <h1>We've shortned your url!</h1>
+        <b>
+            This is the preview of your <a href="{{full_url}}">short url</a>
+         <br> <a href="http://localhost:5000/{{url_id}}">http://localhost:5000/{{url_id}}</a> <br>
+        <br>
+        <br>
+        <a href="/">Home page</a>
+        </b>
+    </div>
+</body>
+</html>

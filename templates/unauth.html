@@ -1,0 +1,19 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Unauthorized</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='style.css') }}">
+</head>
+<body>
+    <div id="center">
+        {% if error %}
+        <b>{{error}}</b>
+        {% endif %}
+        <h1><b>Unauthorized
+        <a href="/">Home page</a>
+
+        </b></h1>
+        
+    </div>
+</body>
+</html>
